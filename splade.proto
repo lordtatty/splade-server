@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+package splade;
+
+service EmbeddingService {
+    rpc GetEmbedding (TextRequest) returns (EmbeddingResponse);
+    rpc GetEmbeddingStrs (TextRequest) returns (TokenEmbeddingResponse);
+}
+
+message TextRequest {
+    string text = 1;
+}
+
+message EmbeddingResponse {
+    map<int32, float> embedding = 1;
+}
+
+message TokenEmbeddingResponse {
+    map<string, float> embedding = 1;
+}
