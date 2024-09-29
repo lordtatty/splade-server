@@ -41,7 +41,7 @@ The server exposes two main gRPC endpoints:
 
 ## SPLADERunner
 
-**SPLADERunner** is an ultra-light and fast wrapper for SPLADE++ models. It is designed to provide efficient query and passage expansion without requiring heavyweight frameworks like PyTorch.
+[**SPLADERunner**](https://github.com/PrithivirajDamodaran/SPLADERunner) is an ultra-light and fast wrapper for SPLADE++ models. It is designed to provide efficient query and passage expansion without requiring heavyweight frameworks like PyTorch.
 
 SPLADERunner supports the following key features:
 
