@@ -4,19 +4,36 @@ This project provides a gRPC server implementation for generating sparse embeddi
 
 ## Table of Contents
 
-- [Overview](#overview)
-- [Features](#features)
-- [SPLADERunner](#spladerunner)
-- [Installation](#installation)
-- [Usage](#usage)
-  - [Running the Server](#running-the-server)
-  - [Health Checks](#health-checks)
-- [Docker](#docker)
-  - [Building and Running](#building-and-running)
-  - [Pulling from Docker Hub](#pulling-from-docker-hub)
-- [Golang Client](#golang-client)
-- [Licenses](#licenses)
-- [Acknowledgements](#acknowledgements)
+<table>
+  <tr>
+    <td>
+      <ul>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#spladerunner">SPLADERunner</a></li>
+        <li><a href="#installation">Installation</a></li>
+        <li><a href="#usage">Usage</a>
+          <ul>
+            <li><a href="#running-the-server">Running the Server</a></li>
+            <li><a href="#health-checks">Health Checks</a></li>
+          </ul>
+        </li>
+        <li><a href="#docker">Docker</a>
+          <ul>
+            <li><a href="#building-and-running">Building and Running</a></li>
+            <li><a href="#pulling-from-docker-hub">Pulling from Docker Hub</a></li>
+          </ul>
+        </li>
+        <li><a href="#golang-client">Golang Client</a></li>
+        <li><a href="#licenses">Licenses</a></li>
+        <li><a href="#acknowledgements">Acknowledgements</a></li>
+      </ul>
+    </td>
+    <td>
+      <img src="https://github.com/user-attachments/assets/82866dff-079a-4a0d-b53c-54779361e3dc" alt="image" width="300"/>
+    </td>
+  </tr>
+</table>
 
 ## Overview
 
