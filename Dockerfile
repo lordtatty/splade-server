@@ -55,8 +55,8 @@ RUN pip install spladerunner
 # Copy the necessary files from the build stage, including the downloaded model
 COPY --from=build /app /app
 
-# Expose the port that the server listens on
-EXPOSE 50051
+# Expose the port that the server listens on (should be 8080 for Cloud Run)
+EXPOSE 8080
 
-# Run the server
+# Run the server, listening on the appropriate port
 CMD ["python", "server.py", "--model", "Splade_PP_en_v1"]

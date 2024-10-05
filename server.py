@@ -86,6 +86,10 @@ class LoggingInterceptor(grpc.ServerInterceptor):
 
 def serve():
     logging.info("Starting server setup...")
+
+    # Get the port from the environment variable, default to 8080 if not set
+    port = os.getenv("PORT", "8080")
+
     server = grpc.server(
         futures.ThreadPoolExecutor(max_workers=10),
         interceptors=[LoggingInterceptor()],
@@ -113,8 +117,8 @@ def serve():
     )
     reflection.enable_server_reflection(SERVICE_NAMES, server)
 
-    server.add_insecure_port('0.0.0.0:50051')
-    logging.info("Server is running on port 50051 with reflection enabled...")
+    server.add_insecure_port(f'0.0.0.0:{port}')
+    logging.info(f"Server is running on port {port} with reflection enabled...")
 
     try:
         server.start()
